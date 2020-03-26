@@ -109,7 +109,7 @@ func GetDepartmentIdMap() (map[string]int, error) {
 	}
 
 	if len(deptCount) > 0 {
-		return nil, fmt.Errorf("部分部门重名，重名部门包括%s", deptCount)
+		return nil, fmt.Errorf("部分部门重名，重名部门包括%v", deptCount)
 	}
 
 	return nameIdMap, nil
